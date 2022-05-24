@@ -1,0 +1,16 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F6BD60;
+}
+.conteiner{
+    display: grid;
+    grid-template: ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #F7EDE2;
+    
+}
