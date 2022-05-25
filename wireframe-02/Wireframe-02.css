@@ -1,0 +1,76 @@
+
+html,body{
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+    background: #5D576B;
+}
+.conteiner{
+    display: grid;
+    grid-template: 50vh 78vh 60vh;
+    grid-template-areas: "h h h"
+                         "n s a"
+                         "n sh a"
+                         "n sa a"
+                         "n sf a" 
+                         "f f f";
+    grid-column-gap: 5%;
+    grid-row-end: 5%;
+    grid-gap: 0.32em;
+}
+header{
+    background: #A27035 ;
+    grid-area: h;
+    height: 20vh;
+    border: 2px solid #000;
+}
+nav{
+    grid-area: n;
+    background: #7B9EA8 ;
+    border: 2px solid #000;
+    height: 50vh;
+    
+}
+aside{
+    grid-area: a;
+    background: #76F7BF ;
+    height: 50vh;
+    border: 2px solid #000;
+}
+footer{
+    grid-area: f;
+    background: #1481BA ;
+    height: 20vh;
+    border: 2px solid #000;
+}
+section{
+    grid-area: s;
+    background: #724E91 ;
+    height: 50vh;
+    border: 2px solid #000;
+}
+section header{
+    grid-area: sh;
+    background: #FF66D8 ;
+    height: 5vh;
+    width: 90%;
+    margin-left: 2vh;
+    
+    border: 2px solid #000;
+}
+section article{
+    grid-area: sa;
+    background: #EEF0EB ;
+    height: 30vh;
+    width: 90%;
+    margin: 2VH;
+    border: 2px solid #000;
+}
+section footer{
+    grid-area: sf;
+    background: #034748 ;
+    height: 5vh;
+    width: 90%;
+    margin: 2VH;
+    border: 2px solid #000;
+}
