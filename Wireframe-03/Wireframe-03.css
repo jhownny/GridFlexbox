@@ -1,0 +1,50 @@
+html,body{
+    margin: 10;
+    padding: 0 auto;
+    box-sizing: border-box;
+    background: #FF686B;
+}
+.conteiner{
+    display: grid;
+    grid-template: 50vh 78vh 60vh;
+    grid-template-areas: "h n h"
+                         ""
+                         ""
+                         ""
+                         "" ;
+    grid-column-gap: 5%;
+    grid-row-end: 5%;
+    grid-gap: 0.32em;
+}
+header{
+    grid-area: h;
+    background: #84DCC6;
+}
+header nav{
+    grid-area: hn;
+    background:#A5FFD6;
+}
+section{
+grid-area: s;
+background: #522A27;
+}
+section header{
+    grid-area: sh;
+    background: #9CB380 ;
+}
+section aside{
+    grid-area: sa;
+    background: #9C0D38 ;
+}
+section article{
+    grid-area: sa2;
+    background: #785964 ;
+}
+section footer{
+    grid-area: sf;
+    background: #8D3B72 ;
+}
+footer{
+ grid-area: f;
+ background: #EE7B30 ;
+}
