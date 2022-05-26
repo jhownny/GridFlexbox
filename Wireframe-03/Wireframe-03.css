@@ -1,50 +1,84 @@
 html,body{
     margin: 10;
-    padding: 0 auto;
+    padding: 0 ;
     box-sizing: border-box;
     background: #FF686B;
 }
 .conteiner{
     display: grid;
-    grid-template: 50vh 78vh 60vh;
-    grid-template-areas: "h n h"
-                         ""
-                         ""
-                         ""
-                         "" ;
+    grid-template: 10vh 10vh 10vh;
+    grid-template-areas: "h hn h"
+                         "s sh sa"
+                         "sa2 sa2 sa"
+                         "sf sf sa"
+                         "f f f" ;
     grid-column-gap: 5%;
     grid-row-end: 5%;
     grid-gap: 0.32em;
 }
-header{
+.h{
+    width: 200vh;
+    height: 19vh;
     grid-area: h;
     background: #84DCC6;
+    border: 2px solid #000;
 }
-header nav{
+.hn{
+    margin-left: 54%;
+    margin-top: 4%;
+    width: 90vh;
+    height: 5vh;
     grid-area: hn;
     background:#A5FFD6;
+    border: 2px solid #000;
 }
-section{
-grid-area: s;
-background: #522A27;
+.s{
+    margin-top: 10%;
+    width: 200vh;
+    height: 83vh;
+    grid-area: s;
+    background: #522A27;
+    border: 2px solid #000;
 }
-section header{
+.sh{
+    margin: 1%;
+    width: 150vh;
+    height: 5vh;
     grid-area: sh;
     background: #9CB380 ;
+    border: 2px solid #000;
 }
-section aside{
+.sa{
+    margin-top: -30%;
+    margin-left: 77%;
+    width: 44vh;
+    height: 75vh;
     grid-area: sa;
     background: #9C0D38 ;
+    border: 2px solid #000;
 }
-section article{
+.sa2{
+    margin: 1%;
+    width: 150vh;
+    height: 50vh;
     grid-area: sa2;
     background: #785964 ;
+    border: 2px solid #000;
 }
-section footer{
+.sf{
+    margin: 1%;
+    margin-top: -8%;
+    width: 150vh;
+    height: 15vh;
     grid-area: sf;
-    background: #8D3B72 ;
+    background: #EE7B30 ;
+    border: 2px solid #000;
 }
-footer{
- grid-area: f;
- background: #EE7B30 ;
+.f{
+    margin-top: 51%;
+    grid-area: f;
+    width: 200vh;
+    height: 15vh;
+    background: #034748 ;
+    border: 2px solid #000;
 }
